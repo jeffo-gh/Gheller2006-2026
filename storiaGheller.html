@@ -6,6 +6,60 @@
 	<script type="text/javascript" src="/gheller/j/scroller.js"></script>
 	<title>Storia Gheller</title>
 	<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media only screen and (max-width: 850px) {
+            /* Forza le tabelle a occupare tutto lo schermo */
+            table[width="75%"], table { width: 100% !important; table-layout: auto !important; }
+            
+            /* Incolonna Logo, Menu e Testo uno sotto l'altro */
+            tr, td { 
+                display: block !important; 
+                width: 100% !important; 
+                position: relative !important;
+                box-sizing: border-box !important;
+            }
+
+            /* Nasconde le celle vuote di margine laterale */
+            td[width="5%"] { display: none !important; }
+
+            /* Logo: centrato */
+            img[src*="logo_2026_2.png"] { 
+                height: auto !important; 
+                max-width: 85% !important; 
+                margin: 10px auto !important;
+                display: block;
+            }
+
+            /* Menu: Pulsanti larghi e facili da cliccare */
+            td[width="200"] { padding: 10px !important; }
+            td[width="200"] table { width: 100% !important; }
+            
+            /* Contenuto: Rimuove lo sfondo pesante e aggiunge aria al testo */
+            td[width="80%"] { 
+                background-image: none !important; 
+                padding: 20px !important;
+                background-color: #FFFFFF;
+            }
+
+            /* Immagini: le incolonna sotto al testo */
+            td[width="60%"], td[width="40%"] { 
+                width: 100% !important; 
+                text-align: center !important;
+            }
+            
+            img { 
+                max-width: 100% !important; 
+                height: auto !important; 
+                margin-bottom: 20px !important;
+                border-radius: 8px;
+            }
+            
+            h1 { font-size: 1.6em !important; text-align: center; }
+        }
+    </style>
+
 	<meta http-equiv="cache-control" content="max-age=0" />
 	<meta http-equiv="cache-control" content="no-cache" />
 	<meta http-equiv="expires" content="0" />
@@ -13,93 +67,60 @@
 	<meta http-equiv="pragma" content="no-cache" />
 </head>
 
-<body bgcolor="#F0F0F0">
-	<!-- logo -->
-	<table align="center" width="75%"  border="0" cellspacing="0" cellpadding="0"	bgcolor="#FFFFFF" bordercolor="#FFFFFF">
-		<tr height="80" bgcolor="#EDF2F6" >
-			<td colspan="2" align="center" style="background-color: white;">
-				<img style="height: 250px" src="Images/logo_2026_2.png"  >
+<body bgcolor="#F0F0F0" style="margin:0; padding:0;">
+	<table align="center" width="75%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+		<tr bgcolor="#EDF2F6">
+			<td align="center" style="background-color: white; padding: 15px;">
+				<img style="height: 250px" src="Images/logo_2026_2.png">
 			</td>
 		</tr>
 	</table>
-	<table align="center" width="75%" height="100%" border="0" bgcolor="#FFFFFF" bordercolor="#FFFFFF">
+
+	<table align="center" width="75%" border="0" bgcolor="#FFFFFF">
 		<tr>
-			<td width="200" valign="top" bgcolor="#FFFFFF" bordercolor="#FFFFFF">
-<!-- MENU -->
-				<table border="0" width="220" cellspacing="0" cellpadding="0" style="font-family: 'Segoe UI', Arial, sans-serif; ">
-    
+			<td width="200" valign="top" bgcolor="#FFFFFF">
+				<table border="0" width="100%" cellspacing="5" cellpadding="0" style="font-family: 'Segoe UI', Arial, sans-serif;">
 				    <tr>
-				        <td align="left" bgcolor="#f8f9fa" 
-				            style="padding: 0; border-left: 4px solid #0056b3; border-radius: 4px; transition: 0.2s;" 
-				            onmouseover="this.style.backgroundColor='#e9ecef'; this.style.borderLeftColor='#003d7a'" 
-				            onmouseout="this.style.backgroundColor='#f8f9fa'; this.style.borderLeftColor='#0056b3'">
-				            <a href="index.html" style="text-decoration: none; color: #333; font-size: 14px; font-weight: bold; display: block; padding: 12px 15px; width: 100%;">
-				                HOME
-				            </a>
+				        <td bgcolor="#f8f9fa" style="border-left: 4px solid #0056b3; border-radius: 4px;">
+				            <a href="index.html" style="text-decoration: none; color: #333; font-size: 14px; font-weight: bold; display: block; padding: 12px 15px;">HOME</a>
 				        </td>
 				    </tr>
-				
 				    <tr>
-				        <td align="left" bgcolor="#f8f9fa" 
-				            style="padding: 0; border-left: 4px solid #0056b3; border-radius: 4px; transition: 0.2s;" 
-				            onmouseover="this.style.backgroundColor='#e9ecef'; this.style.borderLeftColor='#003d7a'" 
-				            onmouseout="this.style.backgroundColor='#f8f9fa'; this.style.borderLeftColor='#0056b3'">
-				            <a href="feste.html" style="text-decoration: none; color: #333; font-size: 14px; font-weight: bold; display: block; padding: 12px 15px; width: 100%;">
-				                FESTE A FOZA
-				            </a>
+				        <td bgcolor="#f8f9fa" style="border-left: 4px solid #0056b3; border-radius: 4px;">
+				            <a href="feste.html" style="text-decoration: none; color: #333; font-size: 14px; font-weight: bold; display: block; padding: 12px 15px;">FESTE A FOZA</a>
 				        </td>
 				    </tr>
-				
 				    <tr>
-				        <td align="left" bgcolor="#f8f9fa" 
-				            style="padding: 0; border-left: 4px solid #0056b3; border-radius: 4px; transition: 0.2s;" 
-				            onmouseover="this.style.backgroundColor='#e9ecef'; this.style.borderLeftColor='#003d7a'" 
-				            onmouseout="this.style.backgroundColor='#f8f9fa'; this.style.borderLeftColor='#0056b3'">
-				            <a href="storiaGheller.html" style="text-decoration: none; color: #333; font-size: 14px; font-weight: bold; display: block; padding: 12px 15px; width: 100%;">
-				                STORIA DELLA FAMIGLIA
-				            </a>
+				        <td bgcolor="#f8f9fa" style="border-left: 4px solid #0056b3; border-radius: 4px;">
+				            <a href="storiaGheller.html" style="text-decoration: none; color: #333; font-size: 14px; font-weight: bold; display: block; padding: 12px 15px;">STORIA DELLA FAMIGLIA</a>
 				        </td>
 				    </tr>
-				
 				    <tr>
-				        <td align="left" bgcolor="#f8f9fa" 
-				            style="padding: 0; border-left: 4px solid #0056b3; border-radius: 4px; transition: 0.2s;" 
-				            onmouseover="this.style.backgroundColor='#e9ecef'; this.style.borderLeftColor='#003d7a'" 
-				            onmouseout="this.style.backgroundColor='#f8f9fa'; this.style.borderLeftColor='#0056b3'">
-				            <a href="moduli.html" style="text-decoration: none; color: #333; font-size: 14px; font-weight: bold; display: block; padding: 12px 15px; width: 100%;">
-				                MODULI
-				            </a>
+				        <td bgcolor="#f8f9fa" style="border-left: 4px solid #0056b3; border-radius: 4px;">
+				            <a href="moduli.html" style="text-decoration: none; color: #333; font-size: 14px; font-weight: bold; display: block; padding: 12px 15px;">MODULI</a>
 				        </td>
 				    </tr>
-				
 				    <tr>
-				        <td align="left" bgcolor="#f8f9fa" 
-				            style="padding: 0; border-left: 4px solid #0056b3; border-radius: 4px; transition: 0.2s;" 
-				            onmouseover="this.style.backgroundColor='#e9ecef'; this.style.borderLeftColor='#003d7a'" 
-				            onmouseout="this.style.backgroundColor='#f8f9fa'; this.style.borderLeftColor='#0056b3'">
-				            <a href="contatti.html" style="text-decoration: none; color: #333; font-size: 14px; font-weight: bold; display: block; padding: 12px 15px; width: 100%;">
-				                CONTATTI
-				            </a>
+				        <td bgcolor="#f8f9fa" style="border-left: 4px solid #0056b3; border-radius: 4px;">
+				            <a href="contatti.html" style="text-decoration: none; color: #333; font-size: 14px; font-weight: bold; display: block; padding: 12px 15px;">CONTATTI</a>
 				        </td>
 				    </tr>
 				</table>
-<!-- FINE MENU -->		
 			</td>
-			<td width="5%" bgcolor="#FFFFFF" bordercolor="#FFFFFF" />
-			<td width="80%" valign="top" align="left" font
-				background="Images/carta intestata foza gray.jpg">
-				<table width="99%" border="0">
+
+			<td width="80%" valign="top" align="left" background="Images/carta intestata foza gray.jpg" style="padding: 10px;">
+				<table width="100%" border="0">
 					<tr>
 						<td width="60%" valign="top">
-							<h1>LE ORIGINI DEL NOME GHELLER</h1>
+							<h1 style="margin-top:0;">LE ORIGINI DEL NOME GHELLER</h1>
 							<font size="3">
 							Origini della Famiglia Gheller L'origine del cognome è legato al nome di
 								Gallio, da cui proviene il capostipite Giacomino fu Nicolò.
 								Negli antichi documenti si parla infatti dei Gheller <em>Illorum
-									de Gallio(quelli di Gallio) </em>dove sembra abbiano avuto il
+									de Gallio (quelli di Gallio) </em>dove sembra abbiano avuto il
 								cognome di Girardi. <br><br> La prima testimonianza scritta
 								appare nel 1527 dove si rileva che Giacomino fu Nicolò Girardi
-								di Gallioè iscritto da tempo nel Comune di Foza e può
+								di Gallio è iscritto da tempo nel Comune di Foza e può
 								partecipare alle assemblee dei capifamiglia.<br><br> <em>A
 									Foza i Gheller si stabilirono nel luogo che prese il loro
 									stesso cognome e nel Seicento divenne uno dei colonnelli del
@@ -117,7 +138,7 @@
 									di sindaco e di decano</u>, alternativamente dal 1572 al 1576 e dal
 								1578 al 1582. <br><br> Anche il fratello Domenico nel 1530
 								aveva svolto il ruolo di consigliere nelle assemblee del Comune.<br><br>
-								ella Vicinia generale dei capifamiglia del 24 maggio 1609 viene
+								Nella Vicinia generale dei capifamiglia del 24 maggio 1609 viene
 								nominato consigliere Piero di Cristian Gheller.<strong>
 									L'importante incarico di Decano viene conferito ancora ad un
 									Gheller</strong>, a Cristian fu Antonio, che presiede la Convicinia
@@ -128,7 +149,7 @@
 								insieme a Giambattista Oro, consiglieri comunali, sono
 								incaricati di andare a Venezia e presentarsi al Doge per
 								definire positivamente le accuse contro la comunità di
-								Valstagna, Gallio ed Enegoe risolvere la questione confinaria
+								Valstagna, Gallio ed Enego e risolvere la questione confinaria
 								che però si trascinò ancora per molti anni. <br><br> La
 								pastorizia a Foza era una delle attività prevalenti e i suoi
 								abitanti, quindi anche i Gheller. Da un documento del 1530
@@ -148,7 +169,7 @@
 								addirittura dalla popolazione locale. <br><br><strong>Un
 									duro colpo per i pastori arrivò nel 1854 con l'abolizione
 									definitiva del pensionatici e il ritiro di tutti i permessi
-									delle poste(transumanza)</strong>. Con il lento cambiamento delle
+									delle poste (transumanza)</strong>. Con il lento cambiamento delle
 								abitudini di vita verso un'esistenza più legata alla casa e alla
 								famiglia ed un evidente aumento demografico sorsero nuovi
 								problemi di carattere economico e sociale che diedero origine al
@@ -167,38 +188,27 @@
 								Brasile, Colombia, Venezuela) e il resto del Mondo (Australia).
 							</font>
 						</td>
-						<td width="40%" align="center"><a
-							href="Images/Scansione0015.jpg"> <img
-								src="Images/Scansione0015.jpg" border="0" style="border-radius: 8px;" height="200">
-						
-						</a> <br> <br> <a href="Images/Scansione0016.jpg"> <img
-								src="Images/Scansione0016.jpg" border="0" style="border-radius: 8px;" height="300">
-						
-						</a><a href="Images/Scansione0010.jpg"> <img
-								src="Images/Scansione0010.jpg" border="0" style="border-radius: 8px;" height="250">
-						
-						</a><br><br>  <a href="Images/Scansione0013.jpg"> <img
-								src="Images/Scansione0013.jpg" border="0" style="border-radius: 8px;" height="200">
-						
-						</a><br><br>  <a href="Images/Scansione0020.jpg"> <img
-								src="Images/Scansione0020.jpg" border="0" style="border-radius: 8px;" height="200">
-						
-						</a><br> <br> <a href="Images/Scansione0012.jpg"> <img
-								src="Images/Scansione0012.jpg" border="0" style="border-radius: 8px;" height="200">
-						
-						</a><br><br>  <a href="Images/Scansione0014.jpg"> <img
-								src="Images/Scansione0014.jpg" border="0" style="border-radius: 8px;" height="200">
-						</a></td>
+						<td width="40%" align="center" valign="top">
+							<a href="Images/Scansione0015.jpg"><img style="border-radius: 10px;padding-top: 15px" src="Images/Scansione0015.jpg" border="0" height="200"></a><br>
+							<a href="Images/Scansione0016.jpg"><img style="border-radius: 10px;padding-top: 15px" src="Images/Scansione0016.jpg" border="0" height="300"></a><br>
+							<a href="Images/Scansione0010.jpg"><img style="border-radius: 10px;padding-top: 15px" src="Images/Scansione0010.jpg" border="0" height="250"></a><br>
+							<a href="Images/Scansione0013.jpg"><img style="border-radius: 10px;padding-top: 15px" src="Images/Scansione0013.jpg" border="0" height="200"></a><br>
+							<a href="Images/Scansione0020.jpg"><img style="border-radius: 10px;padding-top: 15px" src="Images/Scansione0020.jpg" border="0" height="200"></a><br>
+							<a href="Images/Scansione0012.jpg"><img style="border-radius: 10px;padding-top: 15px" src="Images/Scansione0012.jpg" border="0" height="200"></a><br>
+							<a href="Images/Scansione0014.jpg"><img style="border-radius: 10px;padding-top: 15px" src="Images/Scansione0014.jpg" border="0" height="200"></a>
+						</td>
 					</tr>
 				</table>
-				<table>
+				<table width="100%" border="0" style="margin-top: 20px;">
 					<tr>
-						<td width="20%" valign="top"><a href="Images/DSCN8293.JPG">
-						<img src="Images/DSCN8293.JPG" vspace="10" border="0" style="border-radius: 8px;" height="250"></a></td>
-						<td width="80%"><em><font size="3">Tra i personaggi del Novecento legati alla Famiglia Gheller è da
+						<td width="20%" valign="top">
+							<a href="Images/DSCN8293.JPG"><img src="Images/DSCN8293.JPG" border="0" height="250"></a>
+						</td>
+						<td width="80%" valign="top" style="padding-left: 15px;">
+							<em><font size="3">Tra i personaggi del Novecento legati alla Famiglia Gheller è da
 									ricordare la figura di <strong>Giuseppe Gheller</strong>,
 									responsabile dell'impresa edile che costruì l'attuale chiesa
-									parrocchiale in stile lombardo anticosu progetto dell'arch.
+									parrocchiale in stile lombardo antico su progetto dell'arch.
 									<strong>Annibale Zucchini di Ferrara</strong>. I lavori,
 									iniziati nella primavera del 1925, furono conclusi nel 1926. E'
 									parente di quel <font color="#d32f2f">Giacomo Gheller</font>
@@ -210,25 +220,20 @@
 						</td>
 					</tr>
 				</table> 
-				<br> <br> <br>
+				<br><br>
 			</td>
-			<td width="5%" valign="top" bgcolor='#ffffff'/>
 		</tr>
 		<tr>
-			<td bgcolor="#990000" height="1%" colspan="4"></td>
+			<td bgcolor="#990000" height="5" colspan="4"></td>
 		</tr>
-			<!-- Footer -->
-			<tr>
-				<td height="1%" colspan="4" align="center" bgcolor="#f0f6fa">
-					<font size='2'> 
-						<a href="index.html">HOME</a>&nbsp; |&nbsp;
-						<a href="feste.html"> FESTE DI FOZA</a>&nbsp; |&nbsp; 
-						<a href="storiagheller.html"> STORIA GHELLER</a>&nbsp; |&nbsp; 
-						<a href="moduli.html">MODULI</a>&nbsp; |&nbsp; <a href="contatti.html">CONTATTI</a>&nbsp;
-						&nbsp; <br> Ultimo Aggiornamento 26/01/2026
-					</font>
-				</td>
-			</tr>
+		<tr>
+			<td colspan="4" align="center" bgcolor="#f0f6fa" style="padding: 20px;">
+				<font size='2'> 
+					<a href="index.html">HOME</a> | <a href="feste.html">FESTE DI FOZA</a> | <a href="storiagheller.html">STORIA GHELLER</a> | <a href="moduli.html">MODULI</a> | <a href="contatti.html">CONTATTI</a>
+					<br> Ultimo Aggiornamento 26/01/2026
+				</font>
+			</td>
+		</tr>
 	</table>
 </body>
 </html>
